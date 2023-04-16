@@ -12,7 +12,8 @@ public class PIR_Detector extends Sensor{
         this.sensing_angle = sensing_angle;
         this.sensing_range = sensing_range;
     }
-    public PIR_Detector(){
 
+    public int getDirection_angle() {
+        return direction_angle;
     }
 }

@@ -13,6 +13,7 @@ public class Stage3 {
     public Stage3() {
         doors = new ArrayList<Door>();
         windows = new ArrayList<Window>();
+        pirs = new ArrayList<PIR_Detector>();
     }
     public void readConfiguration(Scanner in){
         // reading <#_doors> <#_windows> <#_PIRs>
@@ -31,16 +32,8 @@ public class Stage3 {
         }
         int numPIRs = in.nextInt();
         for (int i = 0; i < numPIRs; i++) {
-            while (in.hasNextFloat()) {
-                Float data = in.nextFloat();
-                System.out.println(data);
-            }
-            while (in.hasNextInt()){
-                int data = in.nextInt();
-                System.out.println(data);
-            }
-            //PIR_Detector pir = new PIR_Detector();
-            //pirs.add(pir);
+            PIR_Detector pir = new PIR_Detector(Float.parseFloat(in.next()), Float.parseFloat(in.next()), Integer.parseInt(in.next()), Integer.parseInt(in.next()), Integer.parseInt(in.next()));
+            pirs.add(pir);
             //central....
         }
 
