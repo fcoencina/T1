@@ -9,4 +9,4 @@ Este archivo explica los archivos de que se compone la tarea, cómo compilarlo (
  
  <h1 align="center"><b> README Tarea1_ELO329  </b></h1>
 <br>
-~solo para etapa 4 - Igual que la documentación~
+_solo para etapa 4 - Igual que la documentación_
