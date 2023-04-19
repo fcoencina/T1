@@ -6,8 +6,11 @@ public class Sensor {
     public Sensor(SwitchState s){
         state = s;
     }
-    public SwitchState getState(){
-        return state;
+    public int getState(){
+        if (state == SwitchState.OPEN)
+            return 1;
+        else
+            return 0;
     }
     protected void setState(SwitchState s) {
         state = s;

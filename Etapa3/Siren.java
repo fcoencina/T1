@@ -19,7 +19,8 @@ public class Siren {
         aWave = new AePlayWave(dir);
         aWave.start();
         try{
-            Thread.sleep(5000);
+            System.out.println("Alarm is sounding!");
+            Thread.sleep(3000);
         }
         catch (Exception e){
             System.out.println("Ha ocurrido un problema con el thread");
