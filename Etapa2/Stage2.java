@@ -73,8 +73,6 @@ public class Stage2 {
                     int open = 0;
                     switch (parameter) {
                         case 'a':
-                            break;
-                        case 'p':
                             if (doors.get(0).getState() == 1) {
                                 System.out.println("Zona 0 se encuentra abierta");
                                 open = 1;
@@ -98,12 +96,15 @@ public class Stage2 {
                                 System.out.println(central.arm());
                             }
                             break;
+                        case 'p':
+                            System.out.println("Este es para la Etapa4: 'Armado nocturno'");
+                            break;
                         case 'd':
                             System.out.println(central.disarm());
                             break;
                     }
+                    break;
             }
-            central.checkZone();
         }
     }
     public void printHeader(PrintStream out){

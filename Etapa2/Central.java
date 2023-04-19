@@ -25,7 +25,6 @@ public class Central {
     public void addNewSensor(Sensor s){
         zone0.add(s);
     }
-    public void checkZone(){}
     public String getHeader(){
         return "Central";
     }
