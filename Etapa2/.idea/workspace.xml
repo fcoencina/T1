@@ -7,9 +7,7 @@
     <list default="true" id="b0a3b18b-7eac-4c07-a046-254bec46bf40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Etapa3/MagneticSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Etapa3/MagneticSensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Etapa3/PIR_Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Etapa3/PIR_Detector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Etapa3/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Etapa3/Sensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Etapa3/Central.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Etapa3/Central.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Etapa3/Stage3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Etapa3/Stage3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Etapa3/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Etapa3/output.csv" afterDir="false" />
     </list>
@@ -60,6 +58,9 @@
       <workItem from="1681583058270" duration="1531000" />
       <workItem from="1681867474314" duration="393000" />
       <workItem from="1681868091116" duration="600000" />
+      <workItem from="1681945455358" duration="905000" />
+      <workItem from="1681969476253" duration="434000" />
+      <workItem from="1682022583799" duration="212000" />
     </task>
     <servers />
   </component>
