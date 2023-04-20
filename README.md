@@ -9,9 +9,9 @@ Este archivo explica los archivos de que se compone la tarea, cómo compilarlo (
 
 
 Integrantes:
-Francisco Encina 202030536-6
-Maximiliano Pozo 201930536-0
-Matías Torres 2020305
-José Beltrán 202030548-k
+- Francisco Encina 202030536-6
+- Maximiliano Pozo 201930536-0
+- Matías Torres 2020305
+- José Beltrán 202030548-k
 
 
