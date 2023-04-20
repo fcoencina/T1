@@ -1,16 +1,15 @@
 public class Sensor {
-    private SwitchState state;
+
+    //Constructores___________________________
     public Sensor(){
         this(SwitchState.OPEN);
     }
     public Sensor(SwitchState s){
         state = s;
     }
-    public int getState(){
-        if (state == SwitchState.OPEN)
-            return 1;
-        else
-            return 0;
+    //Metodos_________________________________
+    public SwitchState getState(){
+        return state;
     }
     protected void setState(SwitchState s) {
         state = s;
@@ -21,4 +20,6 @@ public class Sensor {
         else
             return "0";
     }
+    //Atributos_______________________________
+    protected SwitchState state;
 }

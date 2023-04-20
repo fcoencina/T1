@@ -1,7 +1,5 @@
 public class MagneticSensor extends Sensor {
-    public MagneticSensor(){
-        super();
-    }
+    public MagneticSensor(){}
     public void moveMagnetAwayFromSwitch() {
         setState(SwitchState.OPEN);
     }

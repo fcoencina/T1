@@ -2,9 +2,6 @@ import java.io.File;
 import java.net.URL;
 
 public class Siren {
-    private URL dir;
-    private boolean isSounding;
-    private AePlayWave aWave;
     public Siren (String soundFileName){
         try {
             dir = new File(soundFileName).toURI().toURL();
@@ -16,29 +13,31 @@ public class Siren {
     }
     public void play(){
         isSounding = true;
-        aWave = new AePlayWave(dir);
+        aWave= new AePlayWave(dir);
         aWave.start();
+        System.out.println("Sirena sonando.");
         try{
-            System.out.println("Alarm is sounding!");
             Thread.sleep(3000);
         }
         catch (Exception e){
             System.out.println("Ha ocurrido un problema con el thread");
         }
     }
+    
     public void stop(){
-        if (isSounding){
-            isSounding = false;
-            aWave.stopSounding();
-        }
+        aWave.stopSounding();
     }
     public String getHeader() {
         return "Siren";
     }
-    public int getState() {
-        if (isSounding)
-            return 1;
-        else
-            return 0;
+    public void Desactivar(){
+        isSounding = false;
     }
+
+    public int getState() {
+        return isSounding?1:0;
+    }
+    private URL dir;
+    private boolean isSounding;
+    private AePlayWave aWave;
 }

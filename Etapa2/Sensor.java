@@ -1,11 +1,13 @@
 public class Sensor {
-    private SwitchState state;
+
+    //Constructores___________________________
     public Sensor(){
         this(SwitchState.OPEN);
     }
     public Sensor(SwitchState s){
         state = s;
     }
+    //Metodos_________________________________
     public SwitchState getState(){
         return state;
     }
@@ -18,4 +20,6 @@ public class Sensor {
         else
             return "0";
     }
+    //Atributos_______________________________
+    private SwitchState state;
 }
