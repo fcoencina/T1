@@ -116,28 +116,7 @@ public class Stage3 {
 
                             break;
                         case 'p':
-                            if (doors.get(0).getState() == 1) {
-                                System.out.println("Zona 0 se encuentra abierta");
-                                open = 1;
-                            }
-
-                            for (Door door : doors) {
-                                if ((doors.get(0) != door) && (door.getState() == 1)){
-                                    System.out.println("Zona 1 se encuentra abierta");
-                                    open = 1;
-                                }
-                            }
-
-                            for (Window window : windows) {
-                                if (window.getState() == 1){
-                                    System.out.println("Zona 1 se encuentra abierta");
-                                    open = 1;
-                                }
-                            }
-
-                            if (open == 0)
-                                System.out.println(central.arm());
-
+                            System.out.println("Este es para la Etapa4: 'Armado nocturno'");
                             break;
                         case 'd':
                             System.out.println(central.disarm());
@@ -153,6 +132,7 @@ public class Stage3 {
                     for (PIR_Detector pir : pirs) {
                         if ((central.getState() == 1) && (pir.deteccion(pir.getX(), pir.getY(), cx, cy) == 1)) {
                             siren.play();
+                            break;
                         }
                     }
                     break;
@@ -165,6 +145,7 @@ public class Stage3 {
                             for (PIR_Detector pir : pirs) {
                                 if ((central.getState() == 1) && (pir.deteccion(pir.getX(), pir.getY(), people.get(i).getX(), people.get(i).getY()) == 1)) {
                                     siren.play();
+                                    break;
                                 }
                             }
                             break;
@@ -173,6 +154,7 @@ public class Stage3 {
                             for (PIR_Detector pir : pirs) {
                                 if ((central.getState() == 1) && (pir.deteccion(pir.getX(), pir.getY(), people.get(i).getX(), people.get(i).getY()) == 1)) {
                                     siren.play();
+                                    break;
                                 }
                             }
                             break;
@@ -181,6 +163,7 @@ public class Stage3 {
                             for (PIR_Detector pir : pirs) {
                                 if ((central.getState() == 1) && (pir.deteccion(pir.getX(), pir.getY(), people.get(i).getX(), people.get(i).getY()) == 1)) {
                                     siren.play();
+                                    break;
                                 }
                             }
                             break;
@@ -189,13 +172,13 @@ public class Stage3 {
                             for (PIR_Detector pir : pirs) {
                                 if ((central.getState() == 1) && (pir.deteccion(pir.getX(), pir.getY(), people.get(i).getX(), people.get(i).getY()) == 1)) {
                                     siren.play();
+                                    break;
                                 }
                             }
                             break;
                     }
                     break;
             }
-            central.checkZone();
         }
     }
     public void printHeader(PrintStream out){
