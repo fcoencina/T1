@@ -17,6 +17,11 @@ public class Stage4 {
         pirs = new ArrayList<PIR_Detector>();
         people = new ArrayList<Person>();
     }
+    
+    /*
+    * Lee la configuración que se le entrega al programa al ejecturse, con la cual se crean las puertas, ventanas, PIRs y alarma.
+    * @param in Configuracion inicial para crear el sistema de seguridad <#_doors> <#_windows> <#_PIRs> 
+    */
     public void readConfiguration(Scanner in){
         // reading <#_doors> <#_windows> <#_PIRs>
         central = new Central();
@@ -42,6 +47,13 @@ public class Stage4 {
         central.setSiren(siren);
         in.close();
     }
+    
+    /*
+    * Ejecuta las acciones del usuario, a través de condiciones, x cierra el programa, w crea una ventana, k+a coloca la alarma, k+p alarma nocturna
+    * c   , p+s   , p+a,    p+d
+    * @param in La interacción que el usuario ingresa
+    * @param out Salida que muestra los datos según lo ingresado por el usuario
+    */
     public void executeUserInteraction (Scanner in, PrintStream out){
         String command;
         char parameter;
@@ -204,6 +216,10 @@ public class Stage4 {
             }
         }
     }
+    /*
+    * Muestra los headers de las puertas, ventanas y PIRs.
+    * @param out Los datos de las puertas, ventanas y PIRs
+    */
     public void printHeader(PrintStream out){
         out.print("Step");
         for (Door door : doors) out.print("\t" + door.getHeader());
@@ -213,6 +229,11 @@ public class Stage4 {
         out.print("\t" + central.getHeader());
         out.println();
     }
+    
+    /*
+    * Muestra el estado de las puertas, ventanas y PIRs.
+    * @param out Los datos de las puertas, ventanas y PIRs
+    */
     public void printState(int step, PrintStream out){
         out.print(step);
         for (Door door : doors) out.print("\t" + door.getState());
@@ -222,6 +243,11 @@ public class Stage4 {
         out.print("\t" + central.getState());
         out.println();
     }
+    /*
+    * Lee lo ingresado por el usuario y llama a los métodos necesarios.
+    * @param args Lo ingresado por el usuario, Números de puertas, ventanas, PIRs, Personas y su posición incial y movimiento 
+    * @throws IOException Si ingresas un formato distinto al establecido
+    */
     public static void main(String [] args) throws IOException {
         if (args.length != 1) {
             System.out.println("Usage: java Stage1 <configurationFile.txt>");
