@@ -6,7 +6,12 @@ Este archivo explica los archivos de que se compone la tarea, cómo compilarlo (
  
  <h1 align="center"><b> README Tarea1_ELO329  </b></h1>
 <br>
-solo para etapa 4 - Igual que la Documentación
 
+
+Integrantes:
+Francisco Encina 202030536-6
+Maximiliano Pozo 201930536-0
+Matías Torres 2020305
+José Beltrán 202030548-k
 
 
