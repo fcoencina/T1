@@ -1,10 +1,3 @@
-/*
- * From http://www.anyexample.com/programming/java/java_play_wav_sound_file.xml
- * 
- * Adapted by Markus Goetz and Agustín González
- * Hello Sansano(a), you do not need to understand this class, just use it.
- */
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -18,6 +11,14 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 import javax.sound.sampled.UnsupportedAudioFileException;
  
+/*
+* Hace sonar la alarma.
+* Hello Sansano(a), you do not need to understand this class, just use it.
+* Extiende de Thread.
+* @author Adapted by Markus Goetz and Agustín González
+* @see http://www.anyexample.com/programming/java/java_play_wav_sound_file.xml
+*/
+
 public class AePlayWave extends Thread {
 	protected static AePlayWave m_one;
 	public static void playOneAtATime (URL u) {
