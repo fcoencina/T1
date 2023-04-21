@@ -16,7 +16,7 @@ Compilación:
   - *make* para compilar y crear los archivos
   - *make run* parar correr el programa
   - Al ejecutar el programa usted podrá ingresar los siguientes comandos por teclado:
-    - k <a | p | d> // acción sobre el teclado para a: armar todo (all), p: armar perímetro d: desarmar.
+    - k <a | p | d> // acción sobre el teclado para a: armar todo (all), p: armar perímetro d: desarmar. Al setear un alarma, por ejemplo 'ka', y deseas cambiar de alarma a 'kp', primero se deme desarmar la alarma para hacerlo
     - di <o | c> // con i en 0..(#_doors-1), por ejemplo d0 es la puerta principal. o: open, c: close
     - wi <o | c> // con i en 0..(#_windows-1), o: open, c: close
     - c <x> <y> // así se crea una nueva persona en la ubicación indicada.
@@ -28,7 +28,7 @@ Compilación:
 Integrantes:
 - Francisco Encina 202030536-6
 - Maximiliano Pozo 201930536-0
-- Matías Torres 2020305
+- Matías Torres 202030537-4
 - José Beltrán 202030548-k
 
 
