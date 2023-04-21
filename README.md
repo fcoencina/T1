@@ -5,10 +5,10 @@
 Version Java 17
 
 Archivos que componen la tarea hasta la etapa 4:
-Archivos de código:
-- AePlayWave.java, Central.java, Door.java, MagneticSensor.java, , Makefile, PIR.java, Persona.java, Sensor.java, Siren.java, Stage4.java, State.java, SwitchState.java, Window.java, Zona.java, config.txt, output.csv, siren.wav
--Archivos de pueba
-
+ Archivos de código:
+- AePlayWave.java, Central.java, Door.java, MagneticSensor.java, , Makefile, PIR.java, Persona.java, Sensor.java, Siren.java, Stage4.java, State.java, SwitchState.java, Window.java, Zona.java,, siren.wav
+ Archivos de pueba
+- config.txt, output.csv
 
 Compilación:
  Para la compilación está el Makefile.
