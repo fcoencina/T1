@@ -60,7 +60,7 @@ public class Stage3 {
     public void executeUserInteraction (Scanner in, PrintStream out){
         String command;
         char parameter;
-        int i;
+        int i, sum;
         int step=0;
         printHeader(out);
         while (true) {
@@ -108,11 +108,17 @@ public class Stage3 {
                                 listo = false;
                                 }
                             //Zona 1
-                            int sum=0;
-                            for(int d=1;d<doors.size();d++) sum += doors.get(d).getState();
-                            for(Window w: windows) sum+= w.getState();
+                            sum=0;
+                            //Puertas
+                            for(i=1;i<doors.size();i++){
+                                if(doors.get(i).getState()==0) sum++;
+                            }
+                            //Ventanas
+                            for(Window w: windows) {
+                                if(w.getState()==0) sum++;
+                            }
                             if (sum>0){
-                                System.out.println("Zona 1 abierta");
+                                System.out.println("Zona 1 abierta.");
                                 listo= false;
                             }
                             //Zona 2
@@ -120,6 +126,7 @@ public class Stage3 {
                                 central.arm();
                                 System.out.println("Alarma armada.");
                             }
+                            break;
                             break;
                         case 'd':
                             central.disarm();
